@@ -23,6 +23,8 @@ The app fetches `app-config.json` in the background and applies it on the **next
 | `splash.image` | `https://` URL (e.g. a raw URL to `splash/*.png` in this repo) | Keeps the current splash |
 | `splash.background` | Hex colour, e.g. `#FAF7F0` | Keeps the current colour |
 | `splash.durationMs` | 500–5000 | Clamped |
+| `nativeSplash.enabled` | `true` / `false`; `false` hides the built-in splash as soon as the app or the downloaded splash is ready | Treated as `true` |
+| `nativeSplash.durationMs` | 0–3000: minimum time the built-in splash stays up after the app starts; the downloaded splash appears after it | Clamped |
 | `tabs[].id` | `home`, `ledger`, `profile`, `reports` (no duplicates) | Tab skipped |
 | `tabs[].icon` | `home`, `swap`, `person`, `stats` | Generic icon |
 | number of tabs | 2–5 valid tabs | Default tabs |

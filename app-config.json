@@ -13,7 +13,7 @@
   },
   "nativeSplash": {
     "enabled": false,
-    "durationMs": 800
+    "durationMs": 0
   },
   "tabs": [
     { "id": "home", "label": "Home", "icon": "home" },

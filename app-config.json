@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "appIcon": {
     "active": "default",
     "schedule": []
@@ -8,7 +8,7 @@
     "enabled": false
   },
   "tabs": [
-    { "id": "home", "label": "Dashboard", "icon": "home" },
+    { "id": "home", "label": "Hom", "icon": "home" },
     { "id": "ledger", "label": "Ledger", "icon": "swap" },
     { "id": "profile", "label": "Profile", "icon": "person" }
   ]

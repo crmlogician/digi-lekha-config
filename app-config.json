@@ -12,8 +12,8 @@
     "durationMs": 2200
   },
   "nativeSplash": {
-    "enabled": true,
-    "durationMs": 100
+    "enabled": false,
+    "durationMs": 800
   },
   "tabs": [
     { "id": "home", "label": "Home", "icon": "home" },

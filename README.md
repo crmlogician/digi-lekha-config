@@ -29,6 +29,7 @@ The app fetches `app-config.json` in the background and applies it on the **next
 
 ## Splash images
 
-- `splash/*.png`: images the app downloads (portrait, 1170×2532; PNG, JPEG or WebP, max 3 MB).
+- `splash/*.svg`: **animated** splashes (logo builds up, pixels fly out of the corner). Built by `python3 src/make_animated.py`; keep `durationMs` ≥ 1800 so the animation finishes.
+- `splash/*.png`: images the app downloads (portrait, 1170×2532; PNG, JPEG, WebP or SVG, max 3 MB). Static fallbacks.
 - `src/*.svg`: their sources. Render with `rsvg-convert -w 1170 -h 2532 src/<name>.svg -o splash/<name>.png`.
 - To switch splash: point `splash.image` at the new file **and** change `splash.id` (the app only downloads again when the id changes).

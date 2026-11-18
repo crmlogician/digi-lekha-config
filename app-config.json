@@ -6,10 +6,10 @@
   },
   "splash": {
     "enabled": true,
-    "id": "default-v2",
-    "image": "https://raw.githubusercontent.com/crmlogician/digi-lekha-config/refs/heads/feature/dev/splash/default.png",
+    "id": "default-v3",
+    "image": "https://raw.githubusercontent.com/crmlogician/digi-lekha-config/refs/heads/feature/dev/splash/default.svg",
     "background": "#0B1F3A",
-    "durationMs": 1500
+    "durationMs": 2200
   },
   "tabs": [
     { "id": "home", "label": "Home", "icon": "home" },

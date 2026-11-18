@@ -7,7 +7,7 @@ The app fetches `app-config.json` in the background and applies it on the **next
 
 ## Editing
 
-1. Edit `app-config.json` and push to `main`.
+1. Edit `app-config.json` and push to `feature/dev` (the app reads this branch for now; never push to `main` directly).
 2. GitHub's raw cache can take ~5 minutes to serve the new file.
 3. Open the app (refresh happens in the background), then close and reopen it to see the change.
 
@@ -26,3 +26,9 @@ The app fetches `app-config.json` in the background and applies it on the **next
 | `tabs[].id` | `home`, `ledger`, `profile`, `reports` (no duplicates) | Tab skipped |
 | `tabs[].icon` | `home`, `swap`, `person`, `stats` | Generic icon |
 | number of tabs | 2–5 valid tabs | Default tabs |
+
+## Splash images
+
+- `splash/*.png`: images the app downloads (portrait, 1170×2532; PNG, JPEG or WebP, max 3 MB).
+- `src/*.svg`: their sources. Render with `rsvg-convert -w 1170 -h 2532 src/<name>.svg -o splash/<name>.png`.
+- To switch splash: point `splash.image` at the new file **and** change `splash.id` (the app only downloads again when the id changes).

@@ -5,7 +5,11 @@
     "schedule": []
   },
   "splash": {
-    "enabled": false
+    "enabled": true,
+    "id": "default-v1",
+    "image": "https://raw.githubusercontent.com/crmlogician/digi-lekha-config/refs/heads/feature/dev/splash/default.png",
+    "background": "#0B1F3A",
+    "durationMs": 1500
   },
   "tabs": [
     { "id": "home", "label": "Home", "icon": "home" },

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1170 2532">
+  <rect width="1170" height="2532" fill="#3A0B1F"/>
+  <g transform="translate(585 1050)">
+    <rect x="-260" y="-260" width="520" height="520" rx="116" fill="#1E3A6E" stroke="#FFB627" stroke-width="10"/>
+    <g transform="scale(0.48)"><svg x="-512" y="-512" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <!-- paper -->
+  <path d="M302 222 H622 L722 322 V802 H302 Z" fill="#FAF7F0"/>
+  <!-- fold -->
+  <path d="M622 222 V322 H722 Z" fill="#E6DCC4"/>
+  <!-- ledger lines -->
+  <rect x="362" y="402" width="300" height="26" rx="13" fill="#1E3A6E"/>
+  <rect x="362" y="482" width="230" height="26" rx="13" fill="#1E3A6E" opacity="0.75"/>
+  <rect x="362" y="562" width="270" height="26" rx="13" fill="#1E3A6E" opacity="0.75"/>
+  <rect x="362" y="682" width="160" height="34" rx="17" fill="#C9A227"/>
+  <!-- pixels leaving the corner -->
+  <rect x="742" y="262" width="40" height="40" fill="#C9A227"/>
+  <rect x="802" y="202" width="30" height="30" fill="#C9A227" opacity="0.8"/>
+  <rect x="742" y="182" width="24" height="24" fill="#C9A227" opacity="0.6"/>
+  <rect x="842" y="142" width="18" height="18" fill="#C9A227" opacity="0.45"/>
+</svg></g>
+  </g>
+  <text x="585" y="1470" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="120" font-weight="700" fill="#FFE7A3">Shubh Deepavali</text>
+  <text x="585" y="1560" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="54" font-style="italic" fill="#F2C38B">DigiLekha</text>
+  <text x="585" y="2300" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="40" fill="#F2C38B">splash: diwali</text>
+</svg>

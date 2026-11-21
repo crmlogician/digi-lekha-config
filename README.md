@@ -28,6 +28,29 @@ native launch screen  →  splash  →  app
 - `nativeSplash` only controls how long the plain launch screen stays (`enabled: false` = as short as possible). iOS / Android always show it briefly while the app starts.
 - Changes apply on the **second** launch after GitHub serves the new file (launch 1 downloads, launch 2 shows). GitHub's raw cache can add ~5 minutes.
 
+## How the app icon works
+
+The app ships with three icons: `default` (navy), `dark` and `diwali`. New artwork needs an app release; this file only picks between them.
+
+| `appIcon` in this file | Phone in light mode | Phone in dark mode |
+| --- | --- | --- |
+| `"active": "default"`, no schedule for today | **default** icon | **dark** icon |
+| `"active": "diwali"` (or `"dark"`) | that icon | that icon |
+| A `schedule` entry whose dates include today | that entry's icon (wins over `active`) | that entry's icon |
+
+Example: Diwali icon for a week, then back to normal:
+
+```json
+"appIcon": {
+  "active": "default",
+  "schedule": [{ "value": "diwali", "from": "2027-10-25", "to": "2027-11-01" }]
+}
+```
+
+- The icon changes on the **next launch** after the app has the new file (so usually the 2nd launch after a change here, like the splash).
+- **iOS** changes it when the app opens and shows its own message: *"You have changed the icon for DigiLekha"* (Apple requires it). **Android** changes it when the app goes to the background; nothing is shown.
+- Light / dark follows the phone's appearance at that launch.
+
 ## Rules the app enforces
 
 | Field | Allowed | If invalid |

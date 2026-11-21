@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "appIcon": { "active": "diwali", "schedule": [] },
+  "appIcon": { "active": "default", "schedule": [{ "value": "diwali", "from": "2026-11-01", "to": "2026-11-10" }] },
   "splash": {
     "enabled": true,
     "id": "default-v3",

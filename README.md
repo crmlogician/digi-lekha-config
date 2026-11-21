@@ -48,7 +48,7 @@ Example: Diwali icon for a week, then back to normal:
 ```
 
 - The icon changes on the **next launch** after the app has the new file (so usually the 2nd launch after a change here, like the splash).
-- **iOS** changes it when the app opens; **Android** when the app goes to the background. Either way the app confirms it with its own card (old icon → new icon, OK): right away on iOS, on the next launch on Android.
+- **iOS** changes it when the app opens: iOS shows its own short alert (one OK; Apple requires it), then the app shows the old icon → new icon. **Android** changes it when the app goes to the background; no alert, and the app shows old icon → new icon on the next launch.
 - Light / dark follows the phone's appearance at that launch.
 
 ## Rules the app enforces

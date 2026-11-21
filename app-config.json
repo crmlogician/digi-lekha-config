@@ -1,9 +1,6 @@
 {
   "version": 1,
-  "appIcon": {
-    "active": "default",
-    "schedule": []
-  },
+  "appIcon": { "active": "default", "schedule": [] },
   "splash": {
     "enabled": true,
     "id": "default-v3",
